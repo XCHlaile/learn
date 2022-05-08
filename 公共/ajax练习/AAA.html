@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="js/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+	$(function(){
+			$.ajax({
+                   url: "Login.py",//json文件位置
+                   type: "GET",//请求方式为get
+                   dataType: "json", //返回数据格式为json
+                   success: function(data) {//请求成功完成后要执行的方法
+                       //each循环 使用$.each方法遍历返回的数据date
+                       $.each(data.first, function(i, item) {
+                            var str = '<div>姓名:' + item.name + '性别：' + item.sex + '</div>';
+                            document.write(str);
+                        })
+                        }
+                    });
+
+	})
+</script>
+<title>登录|学生信息管理系统</title>
+<meta name="keywords" content="学生信息管理系统">
+</head>
+<body>
+</body>
+</html>
