@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 单标签 img  -->
+    <!-- 属性 -->
+    <!-- 特点：多个img会在一行展示  设置img的大小  【行内块元素】 -->
+    <!-- src:图片的地址  
+         alt:当我们的图片加载不出来是，显示的文字信息
+         title：鼠标滑到图片位置上  在鼠标右下角显示的信息
+         width:图片的宽度 会成比例放大或缩小
+         hight：图片的高度 单位px像素  带不带可以刻  如果要带的话就都带
+     -->
+     <!-- 绝对路径  相对路径 -->
+     <!-- 绝对路径
+        1.从盘符开始 自己的电脑中有这个图片路径 属于本地图片，只存在当前用户电脑中，到其他人手里，这个图片不会生效
+    -->
+    <img src="D:\python_project\练习\爬虫图片\20.jpg" alt="图片加载不出来" title="美女">
+
+    <!-- 2.网络中的绝对路径  -->
+    <img src="D:\python_project\练习\爬虫图片\100.jpg" alt="图片加载不出来">
+
+
+    <!-- 相对路径 -->
+    <!-- 1.存图片的文件夹和当前的hmtl文件是同级的话，需要使用./图片的位置 -->
+    <img src="./16.jpg" alt="图片加载不出来">
+
+    <!-- 2. 存图片的文件夹和当前的html文件不是同一级时，需要使用“../查找图片位置” -->
+    <img src="../img/23.jpg" alt="图片加载不出来">
+    <!-- ../跳出以及文件夹
+        ../../跳两级文件夹
+     -->
+</body>
+</html>

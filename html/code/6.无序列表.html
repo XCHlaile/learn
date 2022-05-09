@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css 去除ul的默认样式 -->
+    <style>
+        ul{
+            /* 清除ul圆圈默认样式 */
+            list-style: none;
+            /* 清楚距离问题 */
+            margin: 0px;
+            padding:0px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 无序列表 是由 ul 和li 组成 -->
+    <!-- ul>*3 + enter -->
+    <!--
+         特点：
+         ul的子元素必须是li
+              ul默认样式
+              默认每一个li前面都会带有实心圆点的样式
+              
+    -->
+    <ul>
+        <li>1</li>
+        <!-- 非法嵌套 -->
+        <!-- <p>123456789</p> -->
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <!-- 更改type类型 -->
+    <!-- circle :空心圆圈 -->
+    <ul type="circle">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <!-- desc 实心圆圈【默认样式】 -->
+    <ul type="desc">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <!-- square：实心正方形 -->
+    <ul type="square">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+
+</body>
+</html>
