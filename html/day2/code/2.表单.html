@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 表单标签 from 
+    action：将当前页面的表单元素里面的内容提交到哪里
+    method：提交方式  get  post
+    -->
+    <form action="#" method="get">
+        <!-- 表单元素 input -->
+        <!-- 文本框 -->
+        文本框：<input type="text" name="username" value="123" readonly>
+        <!-- 密码框 -->
+        密码框：<input type="password" name="password" disabled>
+        <!-- 提交 -->
+        提交：<input type="submit">
+        <!-- 按钮 -->
+        按钮：<input type="button" value="按钮">
+
+
+        <!-- 单选框 -->
+        单选：<input type="radio" name="sex" checked>男
+            <input type="radio" name="sex">女
+        <!-- 单选框必须添加name  name一致 -->
+
+
+        <!-- 复选框 -->
+        复选框：<input type="checkbox" name="hobby">打游戏
+                <input type="checkbox" name="hobby" checked>学习
+                <input type="checkbox" name="hobby">打篮球
+        <!-- 单选框或者复选框  默认选中的话  使用属性 checked -->
+
+        <!-- 文件 -->
+        上传文件：<input type="file">
+        <!-- 重置 -->
+        重置：<input type="reset">
+        <!-- 图片 -->
+        图片：<input type="image" src="../../day1/img/20.jpg">
+        <!-- 日期 -->
+        日期：<input type="date">
+
+
+
+        <!-- 下拉框 -->
+        <!--   选择不是默认第一个的话  需要设置seleted -->
+        <select name="" id="">
+            <option value="北京">北京</option>
+            <option value="上海" selected>上海</option>
+            <option value="南昌">南昌</option>
+        </select>
+
+        <!-- 文本域 -->
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    
+        
+    
+        <!-- 属性 -->
+        <!-- form  的action 提交到哪里的-->
+        <!-- method：提交方法  get：直接拼到地址栏后边  post：比get更隐秘的方式更安全的方式提交【请求体】 -->
+        <!-- 默认的是get -->
+        <!-- 表单元素的属性
+                name:只有再表单中写上name属性的话，才可以将内容提交
+                value：设置默认值
+                readonly：只能读不能写 可以提交到form
+                disabled：禁用
+        -->
+
+        
+    </form>
+</body>
+</html>

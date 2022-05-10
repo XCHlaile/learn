@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 结构伪类选择器 -->
+    <style>
+        /* 选取的是p所在父元素下面的第一个子元素是p标签 */
+        /* p:first-child{
+            background-color: aqua;
+        } */
+        /* 选取的是p所在父元素下面的最后一个子元素是p标签 */
+         /* p:last-child{
+            background-color: blue;
+        }  */
+        /* 选取的是p所在父元素下面的第n个子元素是p标签 */
+        /*  p:nth-child(n) */
+        /* p:nth-child(3){
+            background-color: pink;
+        }  */
+        /* 选取的是p所在父元素下面的倒数第n个子元素是p标签 */
+        /* p:nth-last-child(n) */
+        /* p:nth-last-child(3){
+            background-color: yellow;
+        } */
+
+
+        /* 选取偶数项的话 2n even */
+        /* p:nth-child(2n) */
+         /* p:nth-child(2n){
+            background-color: red;
+        }*/
+        /* 选取奇数项的话 2n+1 odd  */
+        /* p:nth-child(2n+1){
+            background-color: aqua;
+        } 
+
+        p:nth-child(odd){
+            background-color: yellow;
+        } */
+        /* p:nth-child(even){
+            background-color: red;
+        }  */
+
+        /* p:nth-child(3n+1){
+            background-color: aqua;
+        } */
+
+        /* type */
+        /* 选取其所在父元素下面的第一个子元素li  有一个过滤的效果 先把其他的元素过滤掉  查找第一个li*/
+        /* li:first-of-type{
+            background-color: pink;
+        } */
+        /* 选取其所在父元素下面的最后一个子元素li 先把其他的元素过滤掉 */
+        /* li:last-of-type{
+            background-color: red;
+        } */
+
+        /* n */
+        /* li:nth-of-type(n+2){
+            background-color: aqua;
+        } */
+
+        /* 倒数2n */
+        li:nth-last-of-type(2n){
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>
+    <div>
+         <span>0</span>  造成不生效
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+    </div>
+    </div> -->
+
+    
+    <ul>
+        <p>非法嵌套</p>
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <p>非法嵌套1</p>
+        <li class="item">4</li>
+        <li class="item">5</li>
+        <p>非法嵌套2</p>
+    </ul>
+
+
+</body>
+</html>

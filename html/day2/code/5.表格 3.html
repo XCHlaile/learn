@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" >
+        <!-- 行tr  单元格td组成 -->
+        <!-- 一行里面有三个单元格 -->
+        <!-- 表格中的标题 caption  默认再table表居中的位置 -->
+        <caption>成绩单</caption>
+        <tr>
+            <!-- th：单元头 默认字体加粗 在该单元格是水平居中的位置-->
+            <th>序号</th>
+            <th>姓名</th>
+            <th>成绩</th>
+        </tr>
+        <tr>
+            <!-- td：简单的单元格  默认左对齐 -->
+            <!-- 加在td身上的属性
+                align：水平位置   center left right
+                valign: 垂直位置  middle top  bottom
+                colspan：横跨列  跨几列就写数字几  其余的单元格 直接删除
+                rowspan：竖跨行 跨几行就写数字几 其余的单元格 直接删掉
+            -->
+            
+            <td align="center" height="200px" valign="top">1</td>
+            <td>张三1111111</td>
+            <td>98</td>
+        </tr>
+        <tr>
+            <!-- colspan：横跨列  跨几列就写数字几  其余的单元格 直接删除 -->
+            <td colspan="2">2</td>
+            <!-- <td>李四</td> -->
+            <td>96</td>
+        </tr>
+        <tr>
+            <!-- rowspan：竖跨行 跨几行就写数字几 其余的单元格 直接删掉 -->
+            <td rowspan="2">3</td>
+            <td>李四</td>
+            <td>96</td>
+        </tr>
+        <tr>
+            <!-- <td">4</td> -->
+            <td>李四</td>
+            <td>96</td>
+        </tr>
+    </table>
+</body>
+</html>

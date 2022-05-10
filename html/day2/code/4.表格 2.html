@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 加在table属性
+        border:边框的宽度 1：代表的是1px
+        align：表格在网页中的水平的位置 center居中 left居左  right居右
+        bgcolor:背景颜色
+        width:表格的宽度
+        cellpadding:单元格和内容之间的距离
+        cellspacing：单元格与单元格之间的距离
+        注意的点：cellpadding cellspacing  一般会设置为0px
+    -->
+    <table border="1" align="center" bgcolor="blue" cellpadding="10px" cellspacing="0"width="200px">
+        <!-- 行tr  单元格td组成 -->
+        <!-- 一行里面有三个单元格 -->
+        <!-- 表格中的标题 caption  默认再table表居中的位置 -->
+        <caption>成绩单</caption>
+        <tr>
+            <!-- th：单元头 默认字体加粗 在该单元格是水平居中的位置-->
+            <th>序号</th>
+            <th>姓名</th>
+            <th>成绩</th>
+        </tr>
+        <tr>
+            <!-- td：简单的单元格  默认左对齐 -->
+            <td>1</td>
+            <td>张三1111111</td>
+            <td>98</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>李四</td>
+            <td>96</td>
+        </tr>
+        <!-- 表格中的特点：列等宽，行等高 -->
+    </table>
+</body>
+</html>

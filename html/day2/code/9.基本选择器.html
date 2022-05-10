@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 标签选择器 */
+        /* 选中的是当前页面中所有的div */
+        /* div{
+            width:200px;
+            height:100px;
+            background-color: red;
+        } */
+        /* 标签名{} */
+        /* 类选择器 class 首先要给标签设置class属性 属性值为class名*/
+        /* class类选择器  选取的是网页中class名为one的这一类标签 */
+        /* 在一个网页中  多个标签可以起相同的class类名 同意标签可以有多个class类名 多个class类名用空格隔开*/
+                
+        /* .one{
+            background-color:green;
+        }
+        .two{
+            background-color:red;
+        }
+        .box{
+            width:200px;
+        }
+        .box1{
+            height:100px;
+        }
+        /* 类名会区分大小写 */
+        /* .Box{
+            background-color: yellow;
+        } */ 
+
+
+
+        /* id选择器 给标签设置id属性  属性值为id名 */
+        /* #id名{} */
+        /* id选择器  选取的时候  选择的网页中id名为 four 的哪一个标签  id名是唯一的  类似与身份证号 */
+        /* #four{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+        #five{
+            width: 200px;
+            height:200px;
+            background-color: aquamarine;
+        } */
+
+        /* 通配符选择器 */
+        /* *{} */
+        /* 选取的网页中所有的标签  一般使用通配符是处理默认样式 */
+        /* *{
+            background-color: aqua;
+        } */
+    </style>
+    <style>
+        /* 一个网页中有一个行间引入即可 */
+        /* #box{
+            background-color: aqua;
+        } */
+        div{
+            background-color: red;
+        }
+        .one{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 快捷键div.one -->
+    <!-- <div class="one box box1">1</div>
+    <div class="two box">2</div>
+    <p class="one">333</p> -->
+
+
+
+    <!-- <div id="four">4</div>
+    快捷键div#five 
+    <div id="five">5</div> -->
+
+
+    <!-- <div>1</div>
+    <p>2</p> -->
+    <!-- 优先级问题  id的优先级最高100>其次是class 10>其次是标签 1 >最后是通配符0
+        如果是相同选择器的话  根据就近原则
+    -->
+    <div id="box" class="one">12</div>
+</body>
+</html>
