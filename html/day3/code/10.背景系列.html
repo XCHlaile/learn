@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bg{
+            width: 900px;
+            height: 800px;
+            border: 1px solid black;
+            /* 背景颜色 */
+            /* background-color: aqua; */
+            /* 背景图片 */
+            /* 平铺 */
+            background-image: url("../img/20.jpg");
+            /* 不想平铺只想有一个的话 */
+            /* 1.设置宽高恰巧是背景图片的大小 */
+            /* 2.背景是否平铺   no-repeat ：不平铺  repeat：平铺【默认】*/
+            /* repeat-x:沿着x轴平铺  repeat-y：沿着y轴平铺 */
+            background-repeat:no-repeat ;
+            /* 背景定位 */
+            /* 单位：left  right  center top  botton ; px  ;% */
+            /* 如果你设置了一个值的话 另外一个方向的值  默认是center */
+            /* background-position: right; */
+            /* background-position: center; */
+            /* background-position: right bottom; */
+            /* 第一个值是距离元素左侧有多少的距离  第二个值是距离元素顶部有多远的距离 */
+            /* background-position: 30px 70px; */
+
+            /* % */
+            /* background-position: 100% 50%; */
+
+            /* background复合写法 */
+            /* background：背景颜色 背景图片 是否平铺 背景定位 */
+            /* background: red url("../img/20.jpg") no-repeat 100% 100%; */
+
+            /* background-size背景大小 */
+            /* auto：默认图片大小  px*/
+            /* px:   x      y                    */
+            /* background-size: 300px  200px; */
+            /* %根据当前元素的宽高的百分比来设置 */
+            /* background-size: 50%; */
+            /* background-size: 50% 40%; */
+
+            /* cover:无论背景图片大小是否多少  铺满整个盒子为止 可能超出边界 舍弃某一部分 */
+            /* background-size: cover; */
+
+            /* contain  铺满盒子的宽或高中某一个  完全展示图片  有可能铺不满盒子大小*/
+            /* background-size: contain; */
+        }
+    </style>
+</head>
+<body>
+    <div id="bg">今天天气🌤</div>
+</body>
+</html>

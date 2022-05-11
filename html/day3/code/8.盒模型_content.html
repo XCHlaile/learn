@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bigbox{
+            height: 300px;
+            border: 1px solid;
+        }
+        .box{
+            /* width: 200px; */
+            /* 相对于当前的网页 默认当前屏幕为100% 如果有父元素的话  父元素的宽就是100% */
+            /* width: 200%; */
+            /* width: 2em; */
+            /* width: 2rem; */
+            /* 默认宽度是auto */
+            /* width: auto; */
+
+
+            /* 最小宽度   最大宽度 */
+            /* min-width: 500px; */
+            /* max-width: 1000px; */
+
+            /* 元素的高  默认情况下  内容撑开的  px  em rem */
+            /* height: 100px; */
+            /* % 有父元素的话  高度就是父元素的% */
+            /* height: 100%; */
+
+            /* 最大高度  最小高度 */
+            /* 最小高度：如果内容区域大于最小高度的话 会展示真实高度   */
+            min-height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="bigbox">
+        <div class="box">515</div>
+        <div class="box2">546546</div>
+    </div>
+    
+</body>
+</html>

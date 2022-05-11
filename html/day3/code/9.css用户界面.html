@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea{
+            /* 调正用户界面的大小 */
+            /* none：不能调整  horizontal：水平调整  vertical:垂直方向   both：随意调整【默认值】*/
+            resize: vertical;
+        }
+        
+        /* box-sizing */
+        /* 新旧盒模型 */
+        /* 旧盒模型的宽度=内容的宽+左右padding+左右border+左右margin */
+        /* 新盒模型的宽度=内容的宽【包含左右padding+左右border】+左右的margin */
+        /* box-sizing:border-box */
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border: 5px solid pink;
+            padding: 10px;
+            margin: 20px;
+            box-sizing: border-box;
+        }
+        /* 圆角 */
+        .box2{
+            width: 200px;
+            /* height: 200px; */
+            height: 100px;
+            background-color: red;
+            /* border-radius :单位 px  % */
+            /* 4 3 2 1 */
+            /* 200px*50% */
+            /* border-radius: 50%; */
+            border-radius: 100px;
+        }
+
+        /* 阴影 */
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            /* 阴影 box-shadow */
+            /* box-shadow: 水平偏移位置[正值向右]  垂直偏移位置【正值 向下】  模糊程度  阴影程度  是否位内阴影; */
+            /* 外阴影 */
+            /* box-shadow: 10px 10px 0px black; */
+            /* 内阴影 水平偏移位置[正值向左]  垂直偏移位置【正值 向上】*/
+            /* box-shadow: 10px 10px 10px blue inset; */
+
+            /* 既有内阴影  又有外阴影 */
+            /* 两个设置之间用逗号隔开 */
+
+            /* css设置元素样式  如果是相同的属性的话，以最后设置的为准 */
+            box-shadow: 10px 10px 0 black,10px 10px 15px blue inset;
+        }
+    </style>
+</head>
+<body>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <div class="box">4535</div>
+
+    <div class="box2"></div>
+    <div class="box3">123</div>
+</body>
+</html>

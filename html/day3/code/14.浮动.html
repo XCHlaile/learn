@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* display: inline-block; */
+            /* 左浮动 */
+            /* float: left; */
+            /* 右浮动 */
+            float: right;
+        }
+        .big{
+            width: 600px;
+            height: 600px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        清除浮动  为了清除浮动的影响
+        方法:父盒子加高度
+            overflow:hidden
+     -->
+    <div class="big">
+        <div class="div1">123</div>
+        <div class="div1">456</div>
+        <div class="div1">555</div>
+        <div class="div1">456</div>
+        <div class="div1">123</div>
+        <div class="div1">45654654</div>
+    </div>
+    
+</body>
+</html>
