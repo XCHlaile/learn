@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1168/434 */
+        .box{
+            width: 1168px;
+            height: 434px;
+            /* background-color: aqua; */
+            padding: 33px 36px 31px 33px;
+            /* 新盒模型 */
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        *{
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+        }
+        /* 子代选择器 空格隔开 */
+        .header h2{
+            width: 80px;
+            height: 33px;
+            font-size: 20px;
+            color: #483c3c;
+            border-bottom: 1px solid #e8e8e8;
+            float: left;
+        }
+        .header .more{
+            float: right;
+        }
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+        .more span{
+            font-size: 12px;
+        }
+        .more .icon{
+            color: #45bfff;
+            width: 21px;
+            height: 21px;
+            /* 转成行内-块元素 */
+            display: inline-block;
+            border: 1px solid #45bfff;
+            border-radius: 50px;
+            /* 文字居中 */
+            text-align: center;
+            /* 单行文本 */
+            line-height: 21px;
+        }
+        .item{
+            height: 318px;
+            width: 235px;
+            /* border: 1px solid #ccc; */
+            /* float: left; */
+            margin-top: 16px;
+            margin-right: 22px;
+        }
+        /* .item1{
+            float: left;
+        } */
+        /* 群组选择器 */
+        .item,.item1{
+            float: left;
+        }
+        .item1{
+            margin-top: 113px;
+        }
+        .item img{
+            width: 235px;
+            height: 280px;
+            /* 图片下面有小间隙 */
+            display: block;
+        }
+        .item2{
+            margin-right:10px ;
+        }
+        .item3{
+            margin-right: 6px;
+        }
+        .item p{
+            width: 235px;
+            height: 38px;
+            /* background-color: red; */
+            /* 文字居中 */
+            text-align: center;
+            line-height: 38px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <!-- 头部分 -->
+        <div class="header clearfix">
+            <h2>推荐游戏</h2>
+            <div class="more">
+                <span>更多</span>
+                <span class="icon">+</span>
+            </div>
+        </div>
+
+        <!-- 内容区域 -->
+        <ul class="con">
+            <li class="item1 item3"><a href=""><img src="../../day3/zuoye/2_16.png" alt=""></a></li>
+            <li class="item"><a href=""><img src="../../day3/zuoye/2_07.png" alt=""><p>云溪</p></a></li>
+            <li class="item"><a href=""><img src="../../day3/zuoye/2_09.png" alt=""><p>云溪</p></a></li>
+            <li class="item"><a href=""><img src="../../day3/zuoye/2_11.png" alt=""><p>云溪</p></a></li>
+            <li class="item item2"><a href=""><img src="../../day3/zuoye/2_13.png" alt=""><p>云溪</p></a></li>
+            <li class="item1"><a href=""><img src="../../day3/zuoye/2_18.png" alt=""></a></li>
+        </ul>
+    </div>
+    
+</body>
+</html>

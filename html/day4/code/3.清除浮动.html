@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            width:1000px;
+            background-color:aqua;
+        }
+        li{
+            float: left;
+            width: 60px;
+            background-color: blue; 
+        }
+        .clearfix:after{
+            content: "";
+            /* 清除浮动 */
+            clear: both;
+            /* 转成块元素 */
+            display: block;
+            /* 元素消失  但是会占位 */
+            visibility:hidden ;
+        }
+        p{
+            float: left;
+            width: 100px;
+            background-color: coral;
+        }
+        .box{
+            width: 300px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul class="clearfix">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <div class="clearfix">
+        <p>111</p>
+        <p>222</p>
+        <p>333</p>
+        <p>444</p>
+    </div>
+    <div class="clearfix">
+        <!-- 文档流：html中默认的情况下  元素是从左到右  从上到下 -->
+        <!-- 浮动脱离文档流  但是不会脱离文本流 -->
+        <p>item</p>
+        <p>item</p>
+        <p>item</p>
+        <div class="box">
+            asdfghqwerfghnmsdfghn
+        </div>
+    </div>
+</body>
+</html>

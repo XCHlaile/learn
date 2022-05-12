@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red,.green,.yellow{
+            width: 200px;
+            height: 200px;
+        }
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color: green;
+            /* 绝对定位 */
+            position: absolute;
+            /* left: 200px; */
+            /* top: 200px; */
+            /* 绝对定位：如果没有定位的父元素  
+                        相对于根标签html的位置设置移动。
+                        脱离文档流，不占位，提升层级。
+                        left：元素向右移动
+                        right：向左移动
+                        top：向下
+                        botton：向上
+            */
+
+        }
+        .yellow{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="yellow"></div>
+</body>
+</html>

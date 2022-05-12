@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red,.green,.yellow{
+            width: 200px;
+            height: 200px;
+        }
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color: green;
+            /* 相对定位 */
+            position: relative;
+            /* 偏移量  left  right top botton */
+            /* 水平方向上  left 或者right一个 */
+            /* 垂直方向上  top 或者botton中的一个 */
+            left: 50px;
+            top: 100px;
+
+        }
+        .yellow{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="yellow"></div>
+</body>
+</html>

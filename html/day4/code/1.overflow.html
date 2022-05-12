@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .big{
+            width: 200px;
+            height: 600px;
+            border: 1px solid black;
+            /* 溢出部分隐藏 */
+            /* overflow: hidden; */
+            /* 溢出部分以滚动条展示   看子元素超出父元素的宽或者高 就会出现滚动条 */
+            /* overflow: scroll; */
+            /* 溢出部分显示【默认属性】 */
+            overflow:visible;
+        }
+        .small{
+            width: 400px;
+            height: 200px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="big">
+        <div class="small">
+            1234564687984651231321516
+        </div>
+    </div>
+</body>
+</html>
